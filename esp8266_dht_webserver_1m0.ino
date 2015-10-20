@@ -126,8 +126,7 @@ void ProcessCommand (const char * data)
 
 void SendHTML(String ClientId, int has, float te){
  Serial.println("Someone requested a HTML Page on Client Id:" + ClientId );
-// client.println("<meta http-equiv=\"refresh\" content=\"5\" URL='http://tehniq.go.ro:8081/'\" >");
- SendClient("<HTML><HEAD><meta http-equiv=\"refresh\" content=\"5\"><TITLE>Pete's Mini8266 Server</TITLE></HEAD>"
+ SendClient("<HTML><HEAD><meta http-equiv=\"refresh\" content=\"5\"><TITLE>niq_ro's ESP8266 Server</TITLE></HEAD>"
 
  "<BODY><center><H1>Welcome to niq_ro's ESP8266 page</H1>",ClientId);
  SendClient("<BR><BR><h2>humidity = ",ClientId);
