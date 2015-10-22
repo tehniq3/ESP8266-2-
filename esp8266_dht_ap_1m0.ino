@@ -47,7 +47,8 @@ void setup()
  CommandStep++;
 
  BlinkLED(REDLED,CommandStep,50); 
- SendCommand("AT+GMR", "OK", true);
+ //SendCommand("AT+GMR", "OK", true);
+ SendCommand("AT+CWMODE=2", "OK", false);  // AP mode
  BlinkLED(GREENLED,CommandStep,50);
  CommandStep++;
 
@@ -126,8 +127,8 @@ void ProcessCommand (const char * data)
 
 void SendHTML(String ClientId, int has, float te){
  Serial.println("Someone requested a HTML Page on Client Id:" + ClientId );
- SendClient("<HTML><HEAD><meta http-equiv=\"refresh\" content=\"5\"><TITLE>niq_ro's ESP8266 Server</TITLE></HEAD>"
-
+ SendClient("<HTML><HEAD><meta http-equiv=\"refresh\" content=\"20\"><TITLE>niq_ro's ESP8266 Server</TITLE></HEAD>"
+// autorefresh at every 20 seconds...
  "<BODY><center><H1>Welcome to niq_ro's ESP8266 page</H1>",ClientId);
  SendClient("<BR><BR><h2>humidity = ",ClientId);
  SendClient(String(has),ClientId);
