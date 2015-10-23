@@ -2,6 +2,9 @@
 Start up a very mini web server
  ******* This requires the Mega 2560 board *****
  https://petestechprojects.wordpress.com/2014/12/19/leds-control-through-esp8266-arduino-web-page/
+ change for Serial2 on Arduino Mega by niq_ro from http://www.tehnic.go.ro
+ & http://nicuflorica.blospot.ro
+ & http://arduinotehniq.blogspot.com/
  */
 
 #define TIMEOUT      5000 // mS
