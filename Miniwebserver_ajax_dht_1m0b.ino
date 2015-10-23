@@ -7,8 +7,8 @@ Start up a very mini web server
  & http://arduinotehniq.blogspot.com/
  */
  
-String SSID = "Sfera";
-String PASSWORD = "sferacom";
+String SSID = "SSID";
+String PASSWORD = "password";
 
 #include <DHT.h>
 
