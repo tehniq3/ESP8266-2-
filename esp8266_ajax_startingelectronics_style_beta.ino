@@ -8,8 +8,8 @@ Start up a very mini web server
  & http://arduinotehniq.blogspot.com/
  */
  
-String SSID = "Sfera";
-String PASSWORD = "sferacom";
+String SSID = "SSID";
+String PASSWORD = "pasword";
 
 #define TIMEOUT      5000 // mS
 #define GREENLED     9
