@@ -120,7 +120,7 @@ void setup() {
                  delay(100);  
             
   taim = millis();
-  if(taim > interval){
+  if(taim > kil){
   Serial.println("RESET!");
   digitalWrite(rezet, LOW); //Pulling the RESET pin LOW triggers the reset.
   }     
